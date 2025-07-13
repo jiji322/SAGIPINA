@@ -40,8 +40,8 @@ st.set_page_config(
 # Language translations
 LANGUAGES = {
     "English": {
-        "title": "LUMINARA",
-        "subtitle": "AI-Powered Multi-Factor Risk Assessment for Estrogen Receptor Positive Breast Cancer",
+        "title": "LUMINARA🌟",
+        "subtitle": "AI-Powered Multi-Factor Risk Assessment for Estrogen Receptor Positive Breast Cancer by RJ P.",
         "home": "Home",
         "analyzer": "Multi-Image Analyzer",
         "tracker": "Progress Tracker",
