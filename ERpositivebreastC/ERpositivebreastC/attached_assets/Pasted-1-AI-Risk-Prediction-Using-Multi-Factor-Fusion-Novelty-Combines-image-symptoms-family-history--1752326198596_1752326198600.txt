@@ -1,0 +1,111 @@
+1. AI Risk Prediction Using Multi-Factor Fusion
+✨ Novelty: Combines image, symptoms, family history, and frequency data into one risk score.
+🧪 Prompt for AI:
+Build an AI model that accepts:
+
+Color intensity from strip image
+
+Symptom input (e.g., pain, discharge, irregular periods)
+
+Family cancer history form (e.g., BRCA gene mention, first-degree relative diagnosis)
+
+Frequency of self-tests (e.g., every 3 months)
+The AI combines all factors using a scoring model and returns a total composite risk level (Low, Medium, High).
+
+📊 2. Biomarker-Specific Graphing
+✨ Novelty: Shows progression of individual simulated biomarkers (HER2, ER+, Ki-67).
+🧪 Prompt for AI:
+Generate a Streamlit graphing section that:
+
+Tracks color intensity of each biomarker zone (HER2, ER+, Ki-67).
+
+Plots intensity scores across multiple test dates.
+
+Highlights increasing risk if intensity score crosses a dynamic threshold (e.g., HER2 > 180 = red zone).
+
+🔁 3. Self-Test Reminder and Adherence Tracker
+✨ Novelty: Encourages testing every 3–6 months and tracks user commitment.
+🧪 Prompt for AI:
+Create a reminder module that:
+
+Stores the date of last image upload or test.
+
+Sends a Streamlit notification (or UI reminder) if 3 months have passed.
+
+Adds an “Adherence Score” showing how consistently the user follows testing schedule.
+
+📱 4. Image Calibration via Color Reference Strip
+✨ Novelty: Corrects for lighting conditions using a red standard dot or color patch.
+🧪 Prompt for AI:
+Add an image pre-processing step that:
+
+Asks users to include a known red reference dot (like a sticker).
+
+Normalizes red channel intensity by comparing sample dots to the reference.
+
+Adjusts output risk score based on corrected color range.
+
+🗂️ 5. Risk Journal + PDF Report Generator
+✨ Novelty: Summarizes history into a printable journal for clinics.
+🧪 Prompt for AI:
+After 2+ test uploads:
+
+Auto-generate a health journal showing test date, biomarker results, symptom notes, and family history.
+
+Export it to PDF using ReportLab or HTML to PDF converter.
+
+💬 6. Community Integration with Barangay Health Centers
+✨ Novelty: Recommends the nearest barangay clinics for low-cost checkups.
+🧪 Prompt for AI:
+Create a “Nearest Clinic” module using a static list of clinics with their barangay names and phone numbers.
+
+Based on user input (barangay, city), show:
+
+Name of clinic
+
+Services available (e.g., free mammogram, biopsy referral)
+
+Contact information and hours
+
+🧬 7. Genetic Risk Awareness Module (Simulated)
+✨ Novelty: Educates users about genetic risk (e.g., BRCA1/2) based on input.
+🧪 Prompt for AI:
+Add a page where users answer yes/no to:
+
+“Has any relative been diagnosed with breast or ovarian cancer under 50?”
+
+“Has any family member tested BRCA positive?”
+Based on results, show “Genetic Risk: Elevated” with educational text on genetic counseling.
+
+📶 8. Offline Mode with Local Data Caching
+✨ Novelty: Use Streamlit’s local storage or HTML5 cache so app works offline.
+🧪 Prompt for AI:
+Add offline support that:
+
+Saves user image uploads and history using local storage
+
+Allows offline use with minimal features (upload image → get risk only)
+
+Syncs data to full app when reconnected
+
+🎯 9. AI Chat-Based Diagnosis Explanation
+✨ Novelty: Uses conversational AI to explain results to users in simple language.
+🧪 Prompt for AI:
+Add a chatbox that responds like:
+
+“Your HER2 reading today is 170. That’s considered moderate intensity. While not alarming, it’s important to monitor regularly.”
+
+Include links to learning content or suggest what to do next.
+
+🧪 Summary Table of Novel Features for Prompt AI:
+Feature	AI Prompt Summary
+Risk Fusion	Combine symptoms + color + family history
+Biomarker Graph	Track HER2, ER+, Ki-67 over time
+Self-Test Reminders	Add schedule adherence + alerts
+Color Calibration	Normalize readings with reference red
+PDF Journal	Export test summary in report format
+Clinic Recommender	Show nearest barangay centers
+Genetic Awareness	Simulate BRCA risk questions
+Offline Mode	Local testing with sync when online
+AI Chat Explainer	Results explained in user-friendly text
+

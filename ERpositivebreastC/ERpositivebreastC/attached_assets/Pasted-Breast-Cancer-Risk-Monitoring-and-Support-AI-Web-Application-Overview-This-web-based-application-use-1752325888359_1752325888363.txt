@@ -1,0 +1,156 @@
+Breast Cancer Risk Monitoring and Support AI Web Application
+Overview
+This web-based application uses AI-assisted color analysis and user health data to simulate risk scoring for ER-positive breast cancer, incorporating personalized tracking, education, and follow-up resources. It is designed to work with simulated lateral flow assay (LFA) test results and includes clinical context, multi-language support, and dynamic data visualization.
+
+Application Features
+1. User Interface and Navigation
+Streamlit Framework is used to build a clean, intuitive, and responsive interface optimized for both desktop and mobile.
+
+Sidebar Navigation Panel includes:
+
+Home
+
+Multi-Image Analyzer
+
+Progress Tracker
+
+Family History Assessment
+
+AI Symptom Analysis
+
+Support Chat
+
+Health Resources
+
+Clinical Trials
+
+Education
+
+Data Export
+
+Language Selector (English, Filipino, Spanish) to accommodate diverse users.
+
+2. Multi-Image Analyzer
+Users can upload images of LFA test strips (real or simulated) with 1–3 detection zones.
+
+The AI analyzes color intensity per dot and classifies the result as:
+
+Low Risk
+
+Moderate Risk
+
+High Risk
+
+The algorithm is calibrated based on red spectrum intensity, adjusted for environmental lighting via pre-analysis calibration (optional gray/red card).
+
+3. Progress Tracker with Risk Graphing
+Visual graph showing user’s biomarker risk scores over time:
+
+E.g., Month 0: Moderate → Month 3: High Risk
+
+Graph is based on either color readings or AI symptom scores.
+
+Encourages routine testing every 3 or 6 months.
+
+Data is stored locally (or optionally on user’s device) and plotted using matplotlib or Plotly.
+
+Allows filtering by biomarker type (e.g., ER+ simulations only).
+
+4. AI Symptom Analysis
+Users can input symptoms like:
+
+Unusual lumps
+
+Skin texture changes
+
+Nipple discharge
+
+Menstrual irregularities
+
+AI assigns severity and frequency scores, then outputs a cumulative risk index (low/moderate/high).
+
+Also suggests next actions (e.g., “consult a clinic,” “self-monitor”).
+
+5. Family History Risk Assessment
+Collects key family health indicators:
+
+First-degree relatives with breast or ovarian cancer
+
+Age of onset
+
+Known BRCA1/BRCA2 history
+
+Adjusts personal risk baseline and may increase alert frequency or priority scoring.
+
+6. Support Chat Interface
+Simulated AI chatbot that offers:
+
+Mental health check-ins
+
+Self-exam reminders
+
+Friendly, medically informed advice
+
+All interactions include clear disclaimers: “This is not a clinical diagnosis.”
+
+7. Health Education Center
+Dynamic educational sections on:
+
+What is ER+ breast cancer?
+
+What is HER2, Ki-67, PR, and ER?
+
+How color detection simulates real testing
+
+Risk factors and lifestyle considerations
+
+Importance of early screening in the Philippines
+
+Content is localized (Tagalog option) and accessible to non-experts.
+
+8. Clinical Trials Finder
+Filters and displays ongoing trials (simulated or through links to real registries like clinicaltrials.gov or PH local research).
+
+Users can search based on biomarker type, age, or region.
+
+Encourages patient education and future engagement in scientific studies.
+
+9. Data Summary and Export
+Presents user summary including:
+
+Most recent test result (e.g., "High Risk at Day 90")
+
+Symptom log entries
+
+Family history flags
+
+Risk timeline graph
+
+Exportable in JSON or CSV format for record keeping or sharing with doctors (when applicable).
+
+10. Privacy & Ethical Design
+Data is stored only in session or locally unless user chooses to export.
+
+No personal identifying data collected.
+
+Educational disclaimers included on all risk outputs: “This app does not replace medical diagnosis.”
+
+11. Mobile and Offline Accessibility
+Light asset design ensures good performance on low-end phones.
+
+Optional offline mode using browser storage for field tests (future improvement).
+
+Suggested UI Flow
+Section	Main Function
+Home	Overview + Call to Action
+Image Analyzer	Upload strip image → AI reads color
+Risk Graph	Timeline showing risk changes
+Family History	Risk modifier input
+Symptom Input	Adds new data to AI
+Support	Chat for emotional or health questions
+Learn	Cancer topics in clear, short content
+Export	Save your records locally
+
+🔬 Target Use Case
+Designed for Barangay Health Centers or student-driven health fairs, this app can simulate cost-effective breast cancer risk tracking under ₱100 per user, helping introduce early screening pathways even in underserved communities.
+
