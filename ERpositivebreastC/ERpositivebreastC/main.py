@@ -3091,7 +3091,7 @@ def display_affordable_hospitals():
         fig_free = px.bar(free_hospitals, x='Hospital', y='Quality Score',
                          color='Quality Score', color_continuous_scale='Greens',
                          title="Quality Scores of Free Treatment Centers")
-        fig_free.update_xaxis(tickangle=45)
+        fig_free.update_layout(xaxis=dict(tickangle=45))
         st.plotly_chart(fig_free, use_container_width=True)
     
     with affordability_tabs[1]:
