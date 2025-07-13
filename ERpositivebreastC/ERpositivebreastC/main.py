@@ -31,8 +31,8 @@ import os
 
 # Configure page
 st.set_page_config(
-    page_title="ER+ Breast Cancer Risk Monitor",
-    page_icon="🎗️",
+    page_title="LUMINARA",
+    page_icon="𖤓",
     layout="wide",
     initial_sidebar_state="expanded"
 )
