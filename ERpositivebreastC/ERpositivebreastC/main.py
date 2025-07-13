@@ -3159,7 +3159,7 @@ def display_affordable_hospitals():
         
         fig_philhealth = px.bar(philhealth_info, x='Treatment Package', y='PhilHealth Coverage (PHP)',
                                title="PhilHealth Coverage for ER+ Treatments")
-        fig_philhealth.update_xaxis(tickangle=45)
+        fig_philhealth.update_layout(xaxis=dict(tickangle=45))
         st.plotly_chart(fig_philhealth, use_container_width=True)
         
         st.dataframe(philhealth_info, use_container_width=True)
