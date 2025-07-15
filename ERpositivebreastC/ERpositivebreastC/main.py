@@ -737,7 +737,7 @@ if page == get_text("home"):
     
     with feature_tabs[1]:
         st.write("**Biomarker-Specific Tracking**")
-        st.write("- Tracks ER, PR, and HER2 levels over time")
+        st.write("- Tracks ER levels over time")
         st.write("- Dynamic threshold alerts")
         st.write("- Personalized trend analysis")
         
