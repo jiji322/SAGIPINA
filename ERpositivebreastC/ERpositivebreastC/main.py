@@ -32,7 +32,7 @@ import os
 # Configure page
 st.set_page_config(
     page_title="LUMINARA🌟",
-    page_icon="🌟",
+    page_icon="🌸",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -654,7 +654,7 @@ def get_comprehensive_recommendations(risk_level, confidence, er_results):
     return recommendations
 
 # Sidebar
-st.sidebar.title("🎗️ ER+ Risk Monitor")
+st.sidebar.title("🌸 ER+ Risk Monitor")
 
 # Language selector
 selected_language = st.sidebar.selectbox(
